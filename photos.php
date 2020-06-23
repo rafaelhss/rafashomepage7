@@ -1,8 +1,7 @@
 <?php
 $path    = '/photos';
 $files = array_diff(scandir(__DIR__ .$path), array('.', '..'));
-echo $files;
+foreach($files as $file) {
+    echo $file, '@';
+}
 ?>
-opa
-opa
-<img src="/photos/pic.jpg">
