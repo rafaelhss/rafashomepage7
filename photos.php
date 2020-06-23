@@ -5,3 +5,4 @@ echo $files;
 ?>
 opa
 opa
+<img src="/photos/pic.jpg">
