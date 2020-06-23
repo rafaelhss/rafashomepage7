@@ -1,6 +1,6 @@
 <?php
 $path    = '/photos';
-$files = array_diff(scandir($path), array('.', '..'));
+$files = array_diff(scandir(__DIR__ .$path), array('.', '..'));
 echo $files;
 ?>
 opa
