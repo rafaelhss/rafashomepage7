@@ -1,0 +1,62 @@
+<?php if (strlen($_GET["name"]) > 0): ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Rafas Home page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>    
+    <style>
+        body {
+            background-image: linear-gradient( green, yellow,  red);
+            margin: 0px;   
+        }
+
+        #logo {
+          text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+        }
+        .top-buffer { margin-top:20px; }
+        img{
+            height: 200px;
+            width: 300px;
+        }
+        #controle{
+            position: absolute;
+            top: 10px;
+            left: 20px;
+        }
+    </style>
+    
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+    
+    <div id="controle">
+        <button ng-click="test()">teste</button>
+    </div>
+   <img ng-repeat="photo in photos" ng-src={{photo}} >
+
+ 
+<script>    
+    
+        var app = angular.module('myApp', []);
+        app.controller('myCtrl', function($scope) {
+            
+            
+            
+            $scope.photos = ["https://cdn.eso.org/images/thumb700x/eso1907a.jpg",
+                             "https://www.eso.org/public/archives/wwt.png",
+                             "https://www.eso.org/public/archives/images/ipad_ad.jpg",
+                             "https://www.eso.org/public/archives/images/potwmedium/esopia00080illus.jpg",
+                             "https://www.eso.org/public/archives/images/potwmedium/apex_compound-12-04.jpg"]
+        
+            
+            $scope.test = function(){
+                $scope.photos = $scope.photos.splice(2)
+            }
+            
+        });
+   
+    </script>
+</body>
+</html>
+<? else: echo 'wrong password'; endif ?>
