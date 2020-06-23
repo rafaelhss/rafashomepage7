@@ -51,21 +51,16 @@
                 $scope.photos = photos;
                 
                 $scope.names = result.data
-                                    .toLowerCase()
                                     .replace(/[0-9]/g, '')
                                     .replace(/.gif|.jpe?g|.tiff|.png|.webp|.bmp/g, '')
-                                    .split("@") 
+                                    .split("@")
+                
+                $scope.names = $scope.names.filter(function(item, pos) {
+                                        return $scope.names.indexOf(item) == pos;
+                                    });
                 
             })
             
-            
-            
-            $scope.photos = ["https://cdn.eso.org/images/thumb700x/eso1907a.jpg",
-                             "https://www.eso.org/public/archives/wwt.png",
-                             "https://www.eso.org/public/archives/images/ipad_ad.jpg",
-                             "https://www.eso.org/public/archives/images/potwmedium/esopia00080illus.jpg",
-                             "https://www.eso.org/public/archives/images/potwmedium/apex_compound-12-04.jpg"]
-        
             
             $scope.selectCat = function(name){
                 $scope.photos =  photos.filter((photo) => photo.startsWith(name));
