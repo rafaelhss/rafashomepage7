@@ -18,7 +18,8 @@
         }
         .top-buffer { margin-top:20px; }
         img{
-            height: 200px;
+            width: 50%;
+            max-width: 250px;
             display: block;
             float: left;
             
@@ -37,44 +38,7 @@
         <select ng-model="selectedName" ng-options="name for name in names" ng-change="selectCat(selectedName)"></select>
     </div>
     <img ng-repeat="photo in photos" ng-src=https://rafashomepage7.herokuapp.com/photos/{{photo}} >
-    <img ng-repeat="photo in photos" ng-src=https://rafashomepage7.herokuapp.com/photos/{{photo}} >
-    <img ng-repeat="photo in photos" ng-src=https://rafashomepage7.herokuapp.com/photos/{{photo}} >
-    <img ng-repeat="photo in photos" ng-src=https://rafashomepage7.herokuapp.com/photos/{{photo}} >
-    <img ng-repeat="photo in photos" ng-src=https://rafashomepage7.herokuapp.com/photos/{{photo}} >
-    <img ng-repeat="photo in photos" ng-src=https://rafashomepage7.herokuapp.com/photos/{{photo}} >
-    <img ng-repeat="photo in photos" ng-src=https://rafashomepage7.herokuapp.com/photos/{{photo}} >
-    <img ng-repeat="photo in photos" ng-src=https://rafashomepage7.herokuapp.com/photos/{{photo}} >
-    <img ng-repeat="photo in photos" ng-src=https://rafashomepage7.herokuapp.com/photos/{{photo}} >
-    <img ng-repeat="photo in photos" ng-src=https://rafashomepage7.herokuapp.com/photos/{{photo}} >
-    <img ng-repeat="photo in photos" ng-src=https://rafashomepage7.herokuapp.com/photos/{{photo}} >
-    <img ng-repeat="photo in photos" ng-src=https://rafashomepage7.herokuapp.com/photos/{{photo}} >
-    <img ng-repeat="photo in photos" ng-src=https://rafashomepage7.herokuapp.com/photos/{{photo}} >
-    <img ng-repeat="photo in photos" ng-src=https://rafashomepage7.herokuapp.com/photos/{{photo}} >
-    <img ng-repeat="photo in photos" ng-src=https://rafashomepage7.herokuapp.com/photos/{{photo}} >
-    <img ng-repeat="photo in photos" ng-src=https://rafashomepage7.herokuapp.com/photos/{{photo}} >
-    <img ng-repeat="photo in photos" ng-src=https://rafashomepage7.herokuapp.com/photos/{{photo}} >
-    <img ng-repeat="photo in photos" ng-src=https://rafashomepage7.herokuapp.com/photos/{{photo}} >
-    <img ng-repeat="photo in photos" ng-src=https://rafashomepage7.herokuapp.com/photos/{{photo}} >
-    <img ng-repeat="photo in photos" ng-src=https://rafashomepage7.herokuapp.com/photos/{{photo}} >
-    <img ng-repeat="photo in photos" ng-src=https://rafashomepage7.herokuapp.com/photos/{{photo}} >
-    <img ng-repeat="photo in photos" ng-src=https://rafashomepage7.herokuapp.com/photos/{{photo}} >
-    <img ng-repeat="photo in photos" ng-src=https://rafashomepage7.herokuapp.com/photos/{{photo}} >
-    <img ng-repeat="photo in photos" ng-src=https://rafashomepage7.herokuapp.com/photos/{{photo}} >
-    <img ng-repeat="photo in photos" ng-src=https://rafashomepage7.herokuapp.com/photos/{{photo}} >
-    <img ng-repeat="photo in photos" ng-src=https://rafashomepage7.herokuapp.com/photos/{{photo}} >
-    <img ng-repeat="photo in photos" ng-src=https://rafashomepage7.herokuapp.com/photos/{{photo}} >
-    <img ng-repeat="photo in photos" ng-src=https://rafashomepage7.herokuapp.com/photos/{{photo}} >
-    <img ng-repeat="photo in photos" ng-src=https://rafashomepage7.herokuapp.com/photos/{{photo}} >
-    <img ng-repeat="photo in photos" ng-src=https://rafashomepage7.herokuapp.com/photos/{{photo}} >
-    <img ng-repeat="photo in photos" ng-src=https://rafashomepage7.herokuapp.com/photos/{{photo}} >
-    <img ng-repeat="photo in photos" ng-src=https://rafashomepage7.herokuapp.com/photos/{{photo}} >
-    <img ng-repeat="photo in photos" ng-src=https://rafashomepage7.herokuapp.com/photos/{{photo}} >
-    <img ng-repeat="photo in photos" ng-src=https://rafashomepage7.herokuapp.com/photos/{{photo}} >
-    <img ng-repeat="photo in photos" ng-src=https://rafashomepage7.herokuapp.com/photos/{{photo}} >
-    <img ng-repeat="photo in photos" ng-src=https://rafashomepage7.herokuapp.com/photos/{{photo}} >
-    <img ng-repeat="photo in photos" ng-src=https://rafashomepage7.herokuapp.com/photos/{{photo}} >
-    <img ng-repeat="photo in photos" ng-src=https://rafashomepage7.herokuapp.com/photos/{{photo}} >
-    <img ng-repeat="photo in photos" ng-src=https://rafashomepage7.herokuapp.com/photos/{{photo}} >
+    
 <script>    
     
         var photos = [];
